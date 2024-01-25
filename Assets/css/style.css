@@ -3,9 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px dashed black;
 }
 /* Color palette */
 :root{
+  --dropbox-light:#ffffff;
+  --dropbox-dark:#000000;
+  --dropbox-bottons:#0061ff;
+  --dropbox-bg-darkened:#b4d0e7;
+  --dropbox-bg-light:#ffffff;
 }
 
 /*poi ci va body e altri tag 
@@ -22,9 +28,23 @@ img
 /* #region utilities */
 /* TODO: container larger e small */
 .container_largest{
-  
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
+.flex_align{
+  display: flex;
+  align-items: center;  
+}
+.btn{
+  background-color: var(--dropbox-bottons);
+  padding: 0.5rem;
+  color: white;
+  /* non ho messo color var pk è un btn */
+}
+.gap-1rem{
+  gap: 1rem;
+}
 /* ci vanno anche bottoni e altre cose 
 e.g.
 .mb-2{
@@ -35,14 +55,19 @@ e.g.
 /* #endregion */
 
 /* #region debug*/
+body{
+  background-color: aquamarine;
+}
 /* #endregion */
 
 /* #region header*/
 .header_flexbox{
   display: flex;
-  
-
+  justify-content: space-between;
+  align-content: center;
+  background-color: var(--dropbox-bg-light);
 }
+
 /* #endregion */
 
 /* #region main */
