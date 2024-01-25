@@ -1,0 +1,52 @@
+/* #region common*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Color palette */
+:root{
+}
+
+/*poi ci va body e altri tag 
+e.g. responsive img
+img
+{
+  max-width: 100%;
+  display: block;
+}
+*/
+
+/* #endregion*/
+
+/* #region utilities */
+/* TODO: container larger e small */
+.container_largest{
+  
+}
+
+/* ci vanno anche bottoni e altre cose 
+e.g.
+.mb-2{
+  margin-bottom: 2rem;
+}
+*/
+
+/* #endregion */
+
+/* #region debug*/
+/* #endregion */
+
+/* #region header*/
+.header_flexbox{
+  display: flex;
+  
+
+}
+/* #endregion */
+
+/* #region main */
+/* #endregion */ 
+
+/* #region footer*/
+/* #endregion */
