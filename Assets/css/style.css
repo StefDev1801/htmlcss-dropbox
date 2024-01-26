@@ -13,24 +13,31 @@
   --dropbox-bg-darkened:#b4d0e7;
   --dropbox-bg-light:#ffffff;
 }
-
-/*poi ci va body e altri tag 
-e.g. responsive img
-img
-{
-  max-width: 100%;
-  display: block;
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
-*/
+img{
+  max-width: 100%;
+}
+
 
 /* #endregion*/
 
 /* #region utilities */
 /* TODO: container larger e small */
 .container_largest{
-  height: 50px;
   padding-left: 20px;
   padding-right: 20px;
+}
+.container_large{
+  /* ha senso dargli tanto padding?? Che dato che largest sta su header allora viene carino se stretcho */
+  width: 80%;
+  margin: auto;
 }
 .flex_align{
   display: flex;
@@ -45,6 +52,19 @@ img
 .gap-1rem{
   gap: 1rem;
 }
+.max_width{
+  max-width: 2000px;
+  margin: auto;
+  /* Però allargando comunque resta il bgcolor... */
+}
+.flex_aa{
+  display: flex;
+}
+.column_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* ci vanno anche bottoni e altre cose 
 e.g.
 .mb-2{
@@ -55,23 +75,36 @@ e.g.
 /* #endregion */
 
 /* #region debug*/
-body{
+body.debug{
   background-color: aquamarine;
 }
+
 /* #endregion */
 
 /* #region header*/
 .header_flexbox{
   display: flex;
   justify-content: space-between;
-  align-content: center;
   background-color: var(--dropbox-bg-light);
+  min-height: 50px;
+  flex-wrap: wrap;
 }
-
 /* #endregion */
 
+
 /* #region main */
+.introduction{
+  background-color: var(--dropbox-bg-darkened);
+}
+.introduction_text{
+  width: 40%;
+}
+.introduction_jumbo{
+  width: 60%;
+}
+
 /* #endregion */ 
+
 
 /* #region footer*/
 /* #endregion */
