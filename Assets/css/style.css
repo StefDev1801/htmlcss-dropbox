@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
 }
 /* Color palette */
 :root{
@@ -12,6 +11,7 @@
   --dropbox-bottons:#0061ff;
   --dropbox-bg-darkened:#b4d0e7;
   --dropbox-bg-light:#ffffff;
+  --dropbox-cta:#A92659;
 }
 body{
   font-family: "Open Sans", sans-serif;
@@ -24,8 +24,18 @@ body{
 img{
   max-width: 100%;
 }
-
-
+h1{
+  font-size: 6rem;
+}
+h2{
+  font-size: 4rem;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin: 1rem 0;
+}
 /* #endregion*/
 
 /* #region utilities */
@@ -36,7 +46,11 @@ img{
 }
 .container_large{
   /* ha senso dargli tanto padding?? Che dato che largest sta su header allora viene carino se stretcho */
-  width: 80%;
+  width: 70%;
+  margin: auto;
+}
+.container_small{
+  width: 60%;
   margin: auto;
 }
 .flex_align{
@@ -52,6 +66,7 @@ img{
 .gap-1rem{
   gap: 1rem;
 }
+
 .max_width{
   max-width: 2000px;
   margin: auto;
@@ -64,6 +79,42 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.row{
+  display: flex;
+  /* margin-left: -1px; */
+  /* margin-right: -1px; */
+}
+.col-2{
+  width: calc((100%/12)*2);
+  gap: 1rem;
+}
+.col-4{
+  width: calc((100%/12)*4);
+  gap: 1rem;
+}
+.col-8{
+  width: calc((100%/12)*8);
+}
+.icon{
+  text-align: center;
+}
+.border_lightgray{
+  border: 1px solid gray;
+  /* forse firstchild? */
+}
+.gray{
+  color: gray;
+}
+.padding05rem{
+  padding: 0.5rem;
+}
+.white_button{
+  background-color: var(--dropbox-light);
+  color: var(--dropbox-dark);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: large;
 }
 /* ci vanno anche bottoni e altre cose 
 e.g.
@@ -93,18 +144,106 @@ body.debug{
 
 
 /* #region main */
+/* introduction */
 .introduction{
   background-color: var(--dropbox-bg-darkened);
 }
 .introduction_text{
-  width: 40%;
+  width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .introduction_jumbo{
-  width: 60%;
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: -4rem;
 }
 
+/* pricing */
+.pricing{
+  margin-top: 4rem;
+}
+.pricing_header{
+  padding: 1rem;
+}
+.btn-pricing{
+  padding: 1rem;
+  text-align: center;
+}
+.height-pricing{
+  height: 800px;
+  border: 1px solid gray;
+  padding: 1rem;
+}
+/* references */
+
+
+
+/* enterprice plan */
+.enterprice_header{
+  text-align: center;
+}
+.intro-sect{
+  margin: 1rem 0rem;
+}
+.gray_border{
+  border: 1px solid gray;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.row_enterprice{
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  justify-content: space-between;
+}
+/* partner dropbox */
+.gap_partner{
+  gap: 1rem;
+}
+/* cta */
+.cta{
+  background-color: var(--dropbox-bg-darkened);
+}
+.flex_cta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  color: var(--dropbox-cta);
+}
+.cta_item{
+  width: 50%;
+}
+/* faq */
+.flex_faq{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  height: 2rem;
+}
+.container_faq{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.faq_header{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 /* #endregion */ 
 
 
 /* #region footer*/
-/* #endregion */
+footer{
+  background-color: var(--dropbox-dark);
+  color: var(--dropbox-light);
+}
+.top_footer .col-2
+{
+  margin: 2rem 0;
+}
+  /* #endregion */
