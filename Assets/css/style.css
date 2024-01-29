@@ -126,9 +126,7 @@ e.g.
 /* #endregion */
 
 /* #region debug*/
-body.debug{
-  background-color: aquamarine;
-}
+
 
 /* #endregion */
 
@@ -136,7 +134,6 @@ body.debug{
 .header_flexbox{
   display: flex;
   justify-content: space-between;
-  background-color: var(--dropbox-bg-light);
   min-height: 50px;
   flex-wrap: wrap;
 }
