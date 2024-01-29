@@ -202,6 +202,11 @@ body.debug{
 .gap_partner{
   gap: 1rem;
 }
+/* dropbox business */
+.business_flex{
+  display: flex; 
+}
+.img_business
 /* cta */
 .cta{
   background-color: var(--dropbox-bg-darkened);
