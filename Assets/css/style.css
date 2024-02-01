@@ -25,10 +25,10 @@ img{
   max-width: 100%;
 }
 h1{
-  font-size: 6rem;
+  font-size: 4rem;
 }
 h2{
-  font-size: 4rem;
+  font-size: 2rem;
 }
 ul{
   list-style: none;
@@ -171,6 +171,11 @@ e.g.
   border: 1px solid gray;
   padding: 1rem;
 }
+/* many_teams */
+.container_many{
+  margin: 5rem 0 ;
+}
+
 /* references */
 *{
   margin: 0;
